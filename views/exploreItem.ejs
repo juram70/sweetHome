@@ -1,0 +1,69 @@
+<%- include("partials/indexHeader") -%>
+<%- include("partials/navigation") -%>
+<div class="container-fluid">
+    <div  class="container">
+    <div class="reds row">
+        <!-- Hero Image Section -->
+        <div class="reds col-lg-6 red1">
+            <%- include('partials/imageSlider',{imageUrls:item.imageUrls}) -%>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="col-lg-6 display-none">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6 red">
+                        <img class="img-fluid rounded" src="/<%= item.imageUrls[0] %>" alt="Image 1">
+                    </div>
+                    <div class="col-sm-6 col-xs-6 red">
+                        <img class="img-fluid rounded" src="/<%= item.imageUrls[1] %>" alt="Image 2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6 red">
+                        <img class="img-fluid rounded" src="/<%= item.imageUrls[2] %>" alt="Image 3">
+                    </div>
+                    <div class="col-sm-6 col-xs-6 red">
+                        <img class="img-fluid rounded" src="/<%= item.imageUrls[3] %>" alt="Image 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<br><br>
+<div class="container">
+    <%- include("partials/itemDetails",{item:item}) %>
+</div>
+<br>
+<div class="container">
+    <div class="panel panel-default mt-4">
+        <div class="panel-heading">
+            Contact Information
+        </div>
+        <div class="panel-body">
+            <h5>Call or Text on WhatsApp:</h5>
+            <p class="panel-text">
+                <strong>Phone Number:</strong> <%= item.mobile_number %>
+                
+            </p>
+            <div class="contact-buttons">
+                <a href="tel:<%= item.mobile_number %>" class="btn btn-primary">
+                    <i class="glyphicon glyphicon-earphone"></i> Call Now
+                </a>
+                <a href="https://wa.me/<%= item.whatsapp_number.replace(/\D/g, '') %>?text=I'm%20interested%20in%20your%20property" target="_blank" class="btn btn-success">
+                    <i class="glyphicon glyphicon-comment"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+  
+<br>
+<br><br><br><br><br>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<%- include("partials/footer") -%>

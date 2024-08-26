@@ -1,0 +1,91 @@
+.jumbotron {
+    background-image: url("/assets/nyumba_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  .jumbotron p{
+    background-color: white;
+    font-family: cursive;
+    font-size: large;
+    opacity: 0.9;
+    padding: 0;
+  }
+ .navbar-brand{
+    padding: 0%;
+ }
+ .actives{
+    background-color: #337AB7;
+    color: white;
+ }
+ .reds {
+    display: flex;
+    align-items: stretch;
+}
+.red1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.red1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.red img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.red {
+    padding: 5px;
+    display: flex;
+    align-items: stretch;
+}
+
+.red img {
+    flex-grow: 1;
+}
+
+@media (max-width:1100px) {
+  .reds{
+    flex-direction: column;
+  }
+  .display-none{
+    display: none;
+  }
+  .dangarous{
+    font-size: large;
+    font-family: cursive;
+  }
+}
+
+.contact-buttons a {
+margin-right: 10px;
+margin-top: 10px;
+}
+/* Remove the navbar's default rounded borders and increase the bottom margin */ 
+.navbar {
+margin-bottom: 50px;
+border-radius: 0;
+}
+
+/* Remove the jumbotron's default bottom margin */ 
+.jumbotron {
+margin-bottom: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+background-color: #f2f2f2;
+padding: 25px;
+}
+
+.dangarous{
+  font-size:x-large;
+  font-family: cursive;
+}

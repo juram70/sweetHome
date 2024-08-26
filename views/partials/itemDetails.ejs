@@ -1,0 +1,18 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <%= item.description %>
+    </div>
+    <div class="panel-body">
+      <h5 class="panel-title"><%= item.title %></h5>
+      <p class="panel-text">
+        <strong>Price:</strong> TSh <%= item.price.toLocaleString() %> <br>
+        <strong>Rooms:</strong> <%= item.rooms_number %> <br>
+        <strong>City:</strong> <%= item.city %> <br>
+        <strong>District:</strong> <%= item.district %> <br>
+        <strong>Ward:</strong> <%= item.ward %> <br>
+        <strong>Street:</strong> <%= item.street %> <br>
+        <strong>Master Bedrooms:</strong> <%= item.master_bed_rooms %>
+      </p>
+    </div>
+  </div>
+  
